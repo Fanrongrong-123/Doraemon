@@ -160,16 +160,7 @@ header{
     background-color: #C93300;
 
 }
-/* .necklace{
-    position: absolute;
-    border: 1px solid black;
-    width: 248px;
-    height: 20px;
-    left: 50%;
-    top: 290px;
-    margin-left: -124px;
-}
-.necklace .bell{} */
+
 .soma{
     position: relative;
     border: 1px solid black;
@@ -317,4 +308,39 @@ footer{
     top: 40px;
     left: -20%;
     border-radius: 50%;
+}
+.necklace{
+    position: absolute;
+    width: 180px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 40%;
+    left: 50%;
+    margin-left: -100px;
+    top: 260px;
+    z-index: 2;
+    background-color: #E60110;
+}
+.necklace .bell{
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border: 1px solid black;
+    left: 50%;
+    margin-left: -14px;
+    top:15px;
+    border-radius: 50%;
+    background-color: #F6EF2A;
+}
+.necklace .bell::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    top: 15px;
+    left: 50%;
+    margin-left: -5px;
+    border-radius: 50%;
+    background-color: black;
 }
