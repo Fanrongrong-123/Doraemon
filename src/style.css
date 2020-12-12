@@ -81,6 +81,26 @@ header{
     border-radius: 50%;
     background-color: #C93300;
 }
+
+@keyframes yao{
+    0%{
+        transform: rotate(0deg);
+    }
+    33%{
+        transform: rotate(15deg);
+    }
+    66%{
+        transform: rotate(-15deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.nose:hover{
+    transform-origin: 50% 100%;
+    animation: yao 1000ms linear infinite;
+}
+
 .goatee{
     position: relative;
     width: 220px;
@@ -92,28 +112,27 @@ header{
 .goa{
     border: 1px solid black;
     width: 80px;
-}
-.goa.one{
     position: absolute;
+}
+
+
+.goa.one{
     right: 0;
     top: 10px;
     transform: rotate(160deg);
 }
 .goa.two{
-    position: absolute;
     right: 0;
     top: 50px;
     transform: rotate(20deg);
 
 }
 .goa.three{
-    position: absolute;
     left: 0;
     top: 10px;
     transform: rotate(-160deg);
 }
 .goa.four{
-    position: absolute;
     left: 0;
     top: 50px;
     transform: rotate(-20deg);
@@ -343,4 +362,22 @@ footer{
     margin-left: -5px;
     border-radius: 50%;
     background-color: black;
+}
+@keyframes bell{
+    0%{
+        transform: rotate(0deg);
+    }
+    33%{
+        transform: rotate(15deg);
+    }
+    66%{
+        transform: rotate(-15deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.bell:hover{
+    transform-origin: 50% 0;
+    animation: bell 1000ms linear infinite;
 }
